@@ -20,3 +20,13 @@ end
 service 'ntpd' do
   action [ :enable, :start ]
 end
+
+user 'vish' do
+  comment 'vishal shah'
+  home '/home/vish'
+  shell '/bin/bash'
+end
+
+group 'admins' do
+  members 'vish'
+end
