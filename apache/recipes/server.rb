@@ -8,6 +8,7 @@ end
 
 template '/var/www/html/index.html' do
   source 'index.html.erb'
+  notifies :restart, 'service[httpd]', :immediately
   action :create
 end
 
