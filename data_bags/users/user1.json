@@ -1,8 +1,8 @@
 {
 	"id": "user1",
 	"comment" : "I am user 1",
-	"uid" : "101",
-	"gid" : "1",
+	"uid" : 101,
+	"gid" : 100,
 	"home" : "/home/user1",
 	"shell": "/bin/bash",
 	"platform": "centos"
