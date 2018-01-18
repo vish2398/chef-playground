@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures myhaproxy'
 long_description 'Installs/Configures myhaproxy'
-version '0.1.2'
+version '1.1.2'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 depends 'haproxy', '= 2.0.0'
