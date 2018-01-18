@@ -4,7 +4,8 @@
 #
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
-all_web_nodes = search('node','role:web')
+#the following finds nodes that have a role of web and a chef environment that matches the environment of the LB.  So if the LB is in prod, it'll be prod, else another environment
+all_web_nodes = search('node',"role:web AND chef_environment:#{node.chef_environment}")
 
 members = []
 
